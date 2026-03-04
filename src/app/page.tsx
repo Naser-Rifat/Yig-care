@@ -27,12 +27,12 @@ export default function Home() {
       </div>
       <div className="fixed inset-0 -z-10 bg-black/20" />
 
-      <main className="safe-area-pad flex min-h-svh flex-col items-center justify-center px-3 py-6 sm:px-5 sm:py-8 md:px-6 md:py-10 lg:px-8 lg:py-12">
+      <main className="safe-area-pad flex min-h-svh   flex-col items-center justify-center ">
         {/* Glass card: content-driven height, max-w 1128px — Figma 2812:13172 */}
-        <div className="w-full max-w-[1128px] min-w-0 rounded-2xl bg-[rgba(0,0,0,0.12)] shadow-2xl backdrop-blur-[5px] sm:rounded-3xl">
-          <div className="flex flex-col items-center gap-[clamp(0.5rem,2svh,var(--spacing-9))] px-[clamp(0.75rem,2.5vw,var(--spacing-11))] py-[clamp(0.75rem,3svh,var(--spacing-11))]">
+        <div className="w-full max-w-[1128px] min-w-0  max-h-[902px] rounded-[24px] bg-[rgba(0,0,0,0.12)] shadow-2xl backdrop-blur-[5px] ">
+          <div className="flex flex-col items-center p-[40px]">
             {/* Logo — Figma 2812:13173–13175: 110px, then 175×50 */}
-            <div className="flex shrink-0 flex-col items-center gap-0">
+            <div className="flex shrink-0 flex-col items-center gap-0 pb-[24px]">
               <div className="relative h-[clamp(48px,10svh,110px)] w-[clamp(48px,10svh,110px)]">
                 <Image src="/images/yig-face-logo-white.png" alt="YIG Face logo" width={110} height={110} className="h-full w-full object-cover" priority />
               </div>
@@ -42,13 +42,13 @@ export default function Home() {
             </div>
 
             {/* Gap spacing-9 = 24px Figma */}
-            <div className="flex w-full min-w-0 max-w-full flex-col items-center gap-[clamp(0.25rem,1.2svh,var(--spacing-5))]" style={{ marginTop: "clamp(0.375rem, 1.5svh, var(--spacing-9))" }}>
+            <div className="flex w-full min-w-0 max-w-full flex-col items-center " >
               {/* RESET — BALANCE — RADIATE: 44px Light, lh 1.2, uppercase — Figma 2812:13179 */}
-              <p className="w-full max-w-full text-center font-light uppercase leading-[1.2] text-(--color-white-500)" style={{ fontSize: "clamp(1.15rem, 3.4svh, 52.8px)" }}>
+              <p className="w-full max-w-full text-center font-light uppercase leading-[1.2] text-(--color-white-500) pb-[40px] " style={{ fontSize: "clamp(1.15rem, 3.4svh, 52.8px)" }}>
                 RESET — BALANCE — RADIATE
               </p>
               {/* A NEW ARA... 32px Thin; body 18px Light lh 1.6; pb 32px — Figma 2812:13180–13182 */}
-              <div className="flex w-full min-w-0 max-w-full flex-col items-center gap-[clamp(0.125rem,0.8svh,var(--spacing-5))] text-center" style={{ paddingBottom: "clamp(0.5rem, 1.5svh, var(--spacing-10))" }}>
+              <div className="flex w-full min-w-0 max-w-full flex-col items-center  text-center">
                 <p className="w-full max-w-full font-extralight capitalize leading-[1.2] text-white" style={{ fontSize: "clamp(0.95rem, 2.6svh, 38.4px)" }}>
                   A NEW ARA OF FREQUENCY-WELLNESS IS ALMOST HERE
                 </p>
@@ -60,7 +60,7 @@ export default function Home() {
             </div>
 
             {/* More Info: divider 0.5px, gap 12px, 20px Medium Italic, tracking 1.6px — Figma 2812:13183–13186 */}
-            <div className="flex w-full min-w-0 items-center justify-center gap-3" style={{ marginTop: "clamp(0.25rem, 1.2svh, var(--spacing-5))" }}>
+            <div className="flex w-full min-w-0 items-center justify-center py-[24px]" style={{ marginTop: "clamp(0.25rem, 1.2svh, var(--spacing-5))" }}>
               <div className="h-[0.5px] min-h-px min-w-px flex-1 bg-(--color-border-strong)" />
               <p className="shrink-0 whitespace-nowrap text-center font-medium italic leading-[1.6] text-(--color-brand)" style={{ fontSize: "clamp(0.8rem, 1.8svh, 24px)", letterSpacing: "1.6px" }}>
                 More Info
@@ -70,6 +70,7 @@ export default function Home() {
 
             {/* Want more information... 20px / 18px Light, gap 12px — Figma 2812:13187–13189 */}
             <div className="flex w-full min-w-0 max-w-full flex-col items-center gap-1 text-center font-light leading-[1.6]" style={{ marginTop: "clamp(0.25rem, 1.2svh, var(--spacing-5))" }}>
+              {/* line-hight 120%÷ */}
               <p className="w-full max-w-full whitespace-pre-wrap text-(--color-white-500)" style={{ fontSize: "clamp(0.8rem, 1.8svh, 24px)" }}>
                 Want more information  before you decide?
               </p>
@@ -79,34 +80,34 @@ export default function Home() {
             </div>
 
             {/* Get the YIG.CARE Brief + arrow (gap 2px) + button px32 py12 gap8 — Figma 2812:13190–13196 */}
-            <div className="flex flex-col items-center gap-[clamp(0.125rem,0.8svh,var(--spacing-5))]" style={{ marginTop: "clamp(0.25rem, 1.2svh, var(--spacing-5))" }}>
-              <div className="flex flex-col items-center justify-center gap-0.5">
-                <p className="text-center font-medium leading-[1.6] text-(--color-brand)" style={{ fontSize: "clamp(0.8rem, 1.8svh, 24px)" }}>
+            <div className="flex flex-col items-center pt-[24px]" >
+              <div className="flex flex-col items-center justify-center gap-0.5 ">
+                <p className="text-center font-medium leading-[1.6] text-(--color-brand) pb-[2px]" style={{ fontSize: "clamp(0.8rem, 1.8svh, 24px)" }}>
                   Get the YIG.CARE Brief
                 </p>
-                <div className="flex size-4 shrink-0 items-center justify-center animate-[arrow-bounce_1.2s_ease-in-out_infinite]" aria-hidden>
+                <div className="flex size-4 shrink-0 items-center justify-center animate-[arrow-bounce_1.2s_ease-in-out_infinite] " aria-hidden>
                   <Image
                     src="/images/arrow-right.svg"
                     alt=""
-                    width={24}
-                    height={24}
+                    width={16}
+                    height={16}
                     className="size-4 rotate-90 object-contain"
                   />
                 </div>
               </div>
               <a
                 href="mailto:earlybird@yig.care"
-                className="flex min-h-[44px] min-w-0 items-center justify-center gap-(--spacing-4) rounded-full bg-(--color-brand) px-[clamp(1rem,3vw,var(--spacing-10))] py-[clamp(0.5rem,1.2svh,var(--spacing-5))] font-medium leading-[1.6] text-(--color-brand-dark) transition-opacity hover:opacity-95 active:opacity-90"
+                className="flex min-h-[44px] min-w-0 items-center mt-[12px] mb-[24px] justify-center items-center gap-2  rounded-full bg-(--color-brand) px-[clamp(1rem,3vw,var(--spacing-10))] py-[clamp(0.5rem,1.2svh,var(--spacing-5))] font-medium leading-[1.6] text-(--color-brand-dark) transition-opacity hover:opacity-95 active:opacity-90"
                 style={{ fontSize: "clamp(0.8rem, 1.8svh, 24px)" }}
               >
-                <Image src="/images/icon-email.svg" alt="" width={24} height={24} className="size-4 shrink-0 object-contain" />
+                <Image src="/images/icon-email.svg" alt="" width={16} height={13} className=" shrink-0 object-contain" />
                 <span className="break-all">earlybird@yig.care</span>
               </a>
             </div>
 
             {/* Footer: 20px white, 16px white-700, gap 12px — Figma 2812:13197–13199 */}
-            <div className="flex w-full min-w-0 max-w-full shrink-0 flex-col items-center gap-0 text-center font-light leading-[1.6]" style={{ marginTop: "clamp(0.375rem, 1.5svh, var(--spacing-9))" }}>
-              <p className="w-full max-w-full text-(--color-white-500)" style={{ fontSize: "clamp(0.7rem, 1.7svh, 24px)" }}>
+            <div className="flex w-full min-w-0 max-w-full shrink-0 flex-col items-center py-[12px] text-center font-light leading-[1.6]" style={{ marginTop: "clamp(0.375rem, 1.5svh, var(--spacing-9))" }}>
+              <p className="w-full max-w-full font-weight-[300] text-(--color-white-500)" >
                 YIG.CARE is a product of GOTT WALD Holding LLC.
               </p>
               <p className="w-full max-w-full text-(--color-white-600)" style={{ fontSize: "clamp(0.625rem, 1.3svh, 19.2px)" }}>
