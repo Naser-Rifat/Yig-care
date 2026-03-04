@@ -85,7 +85,7 @@ export default function Home() {
                 <p className="text-center font-medium leading-[1.6] text-(--color-brand) pb-[2px]" style={{ fontSize: "clamp(0.8rem, 1.8svh, 24px)" }}>
                   Get the YIG.CARE Brief
                 </p>
-                <div className="flex size-4 shrink-0 items-center justify-center animate-[arrow-bounce_1.2s_ease-in-out_infinite] " aria-hidden>
+                <div className="flex  shrink-0 items-center justify-center animate-[arrow-bounce_1.2s_ease-in-out_infinite] " aria-hidden>
                   <Image
                     src="/images/arrow-right.svg"
                     alt=""
@@ -100,7 +100,7 @@ export default function Home() {
                 className="flex min-h-[44px] min-w-0 items-center mt-[12px] mb-[24px] justify-center items-center gap-2  rounded-full bg-(--color-brand) px-[clamp(1rem,3vw,var(--spacing-10))] py-[clamp(0.5rem,1.2svh,var(--spacing-5))] font-medium leading-[1.6] text-(--color-brand-dark) transition-opacity hover:opacity-95 active:opacity-90"
                 style={{ fontSize: "clamp(0.8rem, 1.8svh, 24px)" }}
               >
-                <Image src="/images/icon-email.svg" alt="" width={16} height={13} className=" shrink-0 object-contain" />
+                <Image src="/images/icon-email.svg" alt="email icon" width={16} height={13} className="  object-contain" />
                 <span className="break-all">earlybird@yig.care</span>
               </a>
             </div>
