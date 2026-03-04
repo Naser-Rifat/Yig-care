@@ -17,6 +17,9 @@ export const metadata: Metadata = {
       "A new era of frequency-wellness is almost here. Discover serene frequency healing sessions and daily remote energy recharging, powered by YIG.CARE technology.",
     type: "website",
   },
+  icons: {
+    icon: "/yig-favicon.png",
+  },
 };
 
 export default function RootLayout({
